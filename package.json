@@ -3,15 +3,21 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "add": "^2.0.6",
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-scripts": "3.0.0"
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "babel src/lib -d build --copy-files src/lib/*.css",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "prepare": "npm run build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -27,5 +33,18 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "build/index.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paul-doughty/component-example.git"
+  },
+  "author": "Paul Doughty",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/paul-doughty/component-example/issues"
+  },
+  "homepage": "https://github.com/paul-doughty/component-example#readme"
 }
