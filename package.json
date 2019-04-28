@@ -14,7 +14,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "babel src/lib -d build --copy-files src/lib/*.css",
+    "build": "babel src/lib -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "prepare": "npm run build"

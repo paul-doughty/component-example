@@ -7,7 +7,7 @@ const LoadingIndicator = () => (
     <div></div>
     <div></div>
     <div></div>
-    <div></div>
+    <div>Paul was here</div>
     <div></div>
     <div></div>
     <div></div>
